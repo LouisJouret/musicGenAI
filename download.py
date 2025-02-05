@@ -20,7 +20,7 @@ def download_midi_files(directory_number):
     download_links = soup.find_all('a', href=True, text="download")
 
     # Create a folder for MIDI files
-    os.makedirs("MIDI_Files", exist_ok=True)
+    os.makedirs("midi_files", exist_ok=True)
 
     for link in download_links:
         # This is the direct MIDI file download link
