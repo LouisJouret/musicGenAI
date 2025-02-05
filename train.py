@@ -122,7 +122,7 @@ model.summary()
 
 # Define the ModelCheckpoint callback
 checkpoint_callback = callbacks.ModelCheckpoint(
-    filepath='saved_model/best_model',
+    filepath='saved_model/best_model.keras',
     monitor='loss',
     save_best_only=True,
     mode='min',

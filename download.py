@@ -31,7 +31,7 @@ def download_midi_files(directory_number):
         # Download the MIDI file
         midi_response = requests.get(midi_download_url)
         if midi_response.status_code == 200:
-            midi_path = os.path.join("MIDI_Files", midi_filename)
+            midi_path = os.path.join("midi_files", midi_filename)
             with open(midi_path, 'wb') as f:
                 f.write(midi_response.content)
             print(f"Downloaded: {midi_filename}")
